@@ -6,7 +6,7 @@
   <title>InnovateX 2026</title>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/component.css">
 </head>
 <body>
   <nav id="navbar">
@@ -20,63 +20,97 @@
       <li><a href="#register">Register</a></li>
     </ul>
   </nav>
+
   <main>
+
     <section id="home">
       <h1>InnovateX 2026</h1>
+
+      <div class="home-intro">
+        <p class="home-mantra">Invent. Incubate. Inspire.</p>
+        <p class="home-subtitle">Something big is coming, and the clock is ticking</p>
+      </div>
+
       <div id="countdown">
         <div><span id="days">00</span> <small>days</small></div>
         <div><span id="hours">00</span> <small>hours</small></div>
         <div><span id="minutes">00</span> <small>minutes</small></div>
         <div><span id="seconds">00</span> <small>seconds</small></div>
       </div>
- 
+
       <a href="#register">Register now</a>
     </section>
- 
-    <!-- 3. ABOUT: short text about the fest -->
     <section id="about">
       <h2>About</h2>
-      <p>About text goes here.</p>
+      <p>InnovateX is the flagship event of eCell NSUT, the Entrepreneurship Cell of Netaji Subhas University of Technology. It brings together students with fresh ideas and bold ambitions, giving them a platform to compete, learn and build. Through case studies, pitches and hands-on challenges, InnovateX aims to nurture an innovation mindset and strengthen the startup ecosystem. Invent. Incubate. Inspire.</p>
       <div id="stats">
-        <div><strong>00</strong> <span>Stat one</span></div>
-        <div><strong>00</strong> <span>Stat two</span></div>
-        <div><strong>00</strong> <span>Stat three</span></div>
+        <div><strong>500+</strong> <span>Participants</span></div>
+        <div><strong>50+</strong> <span>Colleges</span></div>
+        <div><strong>1L+</strong> <span>Prize Pool</span></div>
       </div>
     </section>
+
     <section id="events">
       <h2>Events</h2>
-      <div id="events-container">
-      </div>
+      <div id="events-container"></div>
     </section>
     <section id="schedule">
       <h2>Schedule</h2>
       <ul id="timeline">
-        <li><strong>1</strong> Inauguration</li>
-        <li><strong>2</strong> Event one</li>
-        <li><strong>3</strong> Event two</li>
-        <li><strong>4</strong> Closing</li>
+        <li><strong>1</strong><span class="timeline-name">Hackathon</span><span class="timeline-date">15 Nov</span></li>
+        <li><strong>2</strong><span class="timeline-name">Startup Pitch</span><span class="timeline-date">16 Nov</span></li>
+        <li><strong>3</strong><span class="timeline-name">Robo Wars</span><span class="timeline-date">17 Nov</span></li>
+        <li><strong>4</strong><span class="timeline-name">Code Quiz</span><span class="timeline-date">18 Nov</span></li>
+        <li><strong>5</strong><span class="timeline-name">Design Sprint</span><span class="timeline-date">19 Nov</span></li>
       </ul>
     </section>
     <section id="gallery">
       <h2>Gallery</h2>
       <div id="gallery-grid">
-        <img src="assets/photo1.jpg" alt="Photo 1">
-        <img src="assets/photo2.jpg" alt="Photo 2">
-        <img src="assets/photo3.jpg" alt="Photo 3">
-        <img src="assets/photo4.jpg" alt="Photo 4">
-        <img src="assets/photo5.jpg" alt="Photo 5">
-        <img src="assets/photo6.jpg" alt="Photo 6">
+        <img src="assets/photo1.jpg.jpg" alt="Photo 1">
+        <img src="assets/photo2.jpg.jpg" alt="Photo 2">
+        <img src="assets/photo3.jpg.jpg" alt="Photo 3">
+        <img src="assets/photo4.jpg.jpg" alt="Photo 4">
+        <img src="assets/photo5.jpg.jpg" alt="Photo 5">
+        <img src="assets/photo6.jpg.jpg" alt="Photo 6">
       </div>
     </section>
     <section id="register">
       <h2>Register</h2>
+      <form id="register-form">
+        <input type="text" id="name" placeholder="Name">
+        <span id="name-error"></span>
+
+        <input type="text" id="email" placeholder="Email">
+        <span id="email-error"></span>
+
+        <input type="text" id="phone" placeholder="Phone (10 digits)">
+        <span id="phone-error"></span>
+
+        <input type="text" id="college" placeholder="College">
+        <span id="college-error"></span>
+
+        <select id="event">
+          <option value="">Choose an event</option>
+        </select>
+        <span id="event-error"></span>
+
+        <button type="submit">Submit</button>
+        <p id="form-message"></p>
+      </form>
     </section>
+
   </main>
+
   <footer>
-    <p>Contact:email</p>
-    <p>links</p>
+    <p>Contact: email</p>
     <p>&copy; 2026 InnovateX</p>
   </footer>
+
+  <script src="js/countdown.js"></script>
+  <script src="js/event.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 </html>
- 
